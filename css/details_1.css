@@ -1,0 +1,117 @@
+.navbar-wrap {
+    background: black !important;
+}
+
+.left-img {
+    width: 100%;
+}
+
+.app-main {
+    margin-top: 120px;
+}
+
+.detail-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #305CB7;
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #ddd;
+    text-transform: uppercase;
+}
+
+.detail-infor {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #666;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.details-price {
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.details-tourism {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin-top: 12px;
+    padding-bottom: 16px;
+}
+
+.main-header-right {
+    padding-top: 8px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group {
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.form-group label {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.form-group select,
+.form-group input {
+    font-size: 1.6rem;
+    height: 100% !important;
+}
+
+.right-infor {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #305CB7;
+}
+
+.book-btn {
+    text-align: right;
+    margin-top: 16px;
+}
+
+.book-btn button {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+.details-program {
+    margin-top: 60px;
+}
+
+.details-program-title {
+    border-bottom: 1px solid #305CB7;
+}
+
+.details-program-title span {
+    padding: 0 8px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: bold;
+    background: #305CB7;
+    color: #fff;
+}
+
+.details-program-content {
+    margin-top: 24px;
+}
+
+.program-content-title {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+}
+
+.program-content {
+    font-size: 1.4rem;
+}
