@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon_HLB.png" />
+    <title>Details</title>
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar-wrap container-fluid">
+        <nav class="container navbar">
+            <div class="nav-left">
+                <a href="index.html" class="logo__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="navbar-img" data-name="Layer 1 copy" viewBox="0 0 64 64" width="512" height="512">
+                        <path d="M62,28l-2-1L55,17l-8-2-1,3.51V31a1,1,0,0,1-2,0V22.38L37,25l-.5,9.65,1.87-.8,4.83,1.79L47,32.9l5.24,3.95,7.81-1.72,1.92.58Zm-6,6a1,1,0,0,1-2,0V31a1,1,0,0,1,2,0Z" />
+                        <path d="M7,8h4a1,1,0,0,0,0-2H7A1,1,0,0,0,7,8Z" />
+                        <path d="M55,9a1,1,0,0,0,1,1h4a1,1,0,0,0,0-2H56A1,1,0,0,0,55,9Z" />
+                        <path d="M37.67,7a1,1,0,0,0,1,1H43a1,1,0,0,0,0-2H39.58A6,6,0,0,0,27.75,6H17a1,1,0,0,0,0,2H28.67a1,1,0,0,0,1-1,4,4,0,1,1,8,0Z" />
+                        <path d="M5,20,3.78,34.07l2.64,2.64L10,35.52V34a1,1,0,0,1,2,0v.85l2.83-.94,5.92,1.69L27,32.12l3.6,3.8L30,25l-6-4-4-4V27a1,1,0,0,1-2,0V16.29Zm14,9a1,1,0,0,1,1,1v2a1,1,0,0,1-2,0V30A1,1,0,0,1,19,29Z" />
+                        <path d="M40,43a5.8,5.8,0,0,0,3.1-.79,10.5,10.5,0,0,1,9.79,0,6.52,6.52,0,0,0,6.22,0,10.19,10.19,0,0,1,2.9-1V37.8l-2-.61-4.5,1L51.8,39,47,35.38l-3.5,2.5L38.42,36l-2,.87-.21,5,.71.34A5.8,5.8,0,0,0,40,43Z" />
+                        <path d="M8,43a5.79,5.79,0,0,0,3.1-.79A9.72,9.72,0,0,1,16,41a9.72,9.72,0,0,1,4.89,1.21A5.79,5.79,0,0,0,24,43a5.8,5.8,0,0,0,3.1-.79,9.75,9.75,0,0,1,3.75-1.15L30.78,39l-2.13-2.24-2-2.14-1.42.79L21,37.75,14.88,36l-9,3-.48-.48L3.55,36.67,3,41.43a11.88,11.88,0,0,1,1.86.79A5.79,5.79,0,0,0,8,43Z" />
+                        <path d="M64,43c-4,0-4,2-8,2s-4-2-8-2-4,2-8,2-4-2-8-2-4,2-8,2-4-2-8-2-4,2-8,2-4-2-8-2v9a1,1,0,0,1,1-1H19a1,1,0,0,1,0,2H1a1,1,0,0,1-1-1v8a1,1,0,0,1,1-1H4a1,1,0,0,1,0,2H1a1,1,0,0,1-1-1v4H64ZM53,51h4a1,1,0,0,1,0,2H53a1,1,0,0,1,0-2Zm-8,0h4a1,1,0,0,1,0,2H45a1,1,0,0,1,0-2ZM23,51H41a1,1,0,0,1,0,2H23a1,1,0,0,1,0-2Zm6,10H8a1,1,0,0,1,0-2H29a1,1,0,0,1,0,2Zm8,0H33a1,1,0,0,1,0-2h4a1,1,0,0,1,0,2Zm22,0H41a1,1,0,0,1,0-2H59a1,1,0,0,1,0,2Z" />
+                    </svg>
+                    <span>WooWain</span>
+                </a>
+            </div>
+
+            <ul class="nav-right">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-item__link">Home</a>
+                    <span class="underline"></span>
+                </li>
+                <li class="nav-item  nav-item-active">
+                    <a href="details.html" class="nav-item__link">Details</a>
+                    <span class="underline"></span>
+                </li>
+                <li class="nav-item ">
+                    <a href="about.html" class="nav-item__link">About</a>
+                    <span class="underline"></span>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-item__link" href="
+                </li>
+                <li class=" nav-item ">
+                        <a class="nav-item__link " href="/login/Login.php " id="login-icon ">
+
+                            <i class="fas fa-user "></i>
+                        </a>
+
+                </li>
+            </ul>
+
+            <!--Mobile-->
+            <div class="bar-icon ">
+                <div class="bar1 bar "></div>
+                <div class="bar2 bar "></div>
+                <div class="bar3 bar "></div>
+            </div>
+        </nav>
+        <div class="mobile-menu ">
+            <div class="mobile-menu-item ">
+                <a href="index.html " class="mobile-item__link ">Home</a>
+            </div>
+            <div class="mobile-menu-item ">
+                <a href="details.html " class="mobile-item__link ">Details</a>
+            </div>
+            <div class="mobile-menu-item ">
+                <a href="about.html " class="mobile-item__link ">About</a>
+            </div>
+            <div class="mobile-menu-item ">
+                <a href="login/signIn.php " class="mobile-item__link mobile-login ">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="header-bg " class="carousel slide " data-ride="carousel ">
+        <div class="carousel-inner ">
+          <div class="carousel-item active ">
+            <img src="./anh/korea.png " style="width: 100%; height:auto; ">
+            <div class="carousel-shadow ">
+              <span class="carousel-shadow-title " style="font-family: Arial, Helvetica, sans-serif; ">VIETNAM-KOREA</span>
+              <div class="carousel__search-wrap ">
+                <div class="carousel-search-input ">
+                  <input type="text " class="input-search " placeholder="Khám phá Việt Nam - Korea ">
+                  <div class="search-icon ">
+                    <i class="fas fa-search "></i>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__confirm ">
+                <button class="confirm-btn ">Let's go!</button>
+              </div>
+            </div>
+            </div>
+            <div class="carousel-item ">
+            <img src="./anh/korea.png " style="width: 100%; ">
+                <div class="carousel-shadow ">
+                    <span class="carousel-shadow-title " style="font-family: Arial, Helvetica, sans-serif; ">VIETNAM-KOREA</span>
+                </div>
+            </div>
+            <div class="carousel-item ">
+            <img src="./anh/korea.png " style="width: 100%; ">
+                <div class=" carousel-shadow ">
+                  <span class="carousel-shadow-title " style="font-family: Arial, Helvetica, sans-serif; ">VIETNAM-KOREA</span>
+                </div>
+            </div>
+        </div>
+         <!-- Nút điều hướng trước -->
+                <a class="carousel-control-prev " href="#header-bg " role="button " data-slide="prev ">
+                  <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                  <span class="sr-only ">Previous</span>
+                </a>
+
+                <!-- Nút điều hướng tiếp theo -->
+                <a class="carousel-control-next " href="#header-bg " role="button " data-slide="next ">
+                  <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                  <span class="sr-only ">Next</span>
+                </a>
+      </div>
+      
+
+
+
+
+
+    <!--Popular Attractions-->
+
+    <div class="container-fluid app-main ">
+        <div class="container ">
+            <div class="text-left content-title ">
+                <i class="fas fa-certificate "></i> Popular Raincoat
+            </div>
+            <div class="row ">
+                <div class="col-md-3 content1-item ">
+                    <a href="./page/index.html " class="content1-item_link ">
+                        <img src="images/aomua1.jpg " alt=" " class="content1-img ">
+                        <div class="content1-title ">Raincoat</div>
+                        <!-- <div class="content1-underline "></div> -->
+                    </a>
+                </div>
+                <div class="col-md-3 content1-item ">
+                    <a href="./page/index2.html " class="content1-item_link ">
+                        <img src="images/aomua2.jpg " alt=" " class="content1-img ">
+                        <div class="content1-title ">Poncho</div>
+                    </a>
+                </div>
+                <div class="col-md-3 content1-item ">
+                    <a href="# " class="content1-item_link ">
+                        <img src="images/aomua3.jpg " alt=" " class="content1-img ">
+                        <div class="content1-title ">Rain poncho</div>
+                    </a>
+                </div>
+                <div class="col-md-3 content1-item ">
+                    <a href="# " class="content1-item_link ">
+                        <img src="images/aomua4.jpg " alt=" " class="content1-img ">
+                        <div class="content1-title ">Waterproof jacket</div>
+                    </a>
+                </div>
+                <div class="col-md-3 content1-item ">
+                    <a href="# " class="content1-item_link ">
+                        <img src="images/aomua3.jpg " alt=" " class="content1-img ">
+                        <div class="content1-title ">Rain slicke</div>
+                    </a>
+                </div>
+                <div class="col-md-3 content1-item ">
+                    <a href="# " class="content1-item_link ">
+                        <img src="images/aomua4.jpg " alt=" " class="content1-img ">
+                        <div class="content1-title ">Rain shel</div>
+                    </a>
+                </div>
+                <div class="col-md-3 content1-item ">
+                    <a href="# " class="content1-item_link ">
+                        <img src="images/aomua2.jpg " alt=" " class="content1-img ">
+                        <div class="content1-title ">Rain cape</div>
+                    </a>
+                </div>
+                <div class="col-md-3 content1-item ">
+                    <a href="# " class="content1-item_link ">
+                        <img src="images/aomua1.jpg " alt=" " class="content1-img ">
+                        <div class="content1-title ">Anorak</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Inspiring Articles-->
+
+        <div class="container ">
+            <div class="text-left content-title ">
+                <i class="fas fa-certificate "></i> Sale
+            </div>
+            <div class="row ">
+                <div class="col-md-3 content2-item ">
+                    <a href="# " class="content2-item_link ">
+                        <img src="images/aomua1.jpg " alt=" " class="content1-img ">
+                        <div class="article-category ">Rain cape</div>
+                        <div class="article-title ">Áo mưa dạng áo dù có nón và có dây kéo phía trước</div>
+                        <div class="article-time ">MAY 09, 2020</div>
+                    </a>
+                </div>
+                <div class="col-md-3 content2-item ">
+                    <a href="# " class="content2-item_link ">
+                        <img src="images/aomua2.jpg " alt=" " class="content1-img ">
+                        <div class="article-category ">Rain shell</div>
+                        <div class="article-title ">Áo mưa dạng áo khoác mỏng nhẹ chống thấm nước.</div>
+                        <div class="article-time ">APRIL 18, 2020</div>
+                    </a>
+                </div>
+                <div class="col-md-3 content2-item ">
+                    <a href="# " class="content2-item_link ">
+                        <img src="images/aomua3.jpg " alt=" " class="content1-img ">
+                        <div class="article-category ">Waterproof parka</div>
+                        <div class="article-title ">Áo khoác dài chống thấm nước.</div>
+                        <div class="article-time ">APRIL 16, 2020</div>
+                    </a>
+                </div>
+                <div class="col-md-3 content2-item ">
+                    <a href="# " class="content2-item_link ">
+                        <img src="images/aomua4.jpg " alt=" " class="content1-img ">
+                        <div class="article-category ">Trench coat</div>
+                        <div class="article-title ">Áo khoác dạng áo mưa dài và sang trọng. [UPDATED MAY 08]</div>
+                        <div class="article-time ">MARCH 14, 2020</div>
+                    </a>
+                </div>
+                <div class="col-sm-12 ">
+                    <a href="# " class="see-more_link ">See more</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Tours-->
+
+        <div class="container ">
+            <div class="text-left content-title ">
+                <i class="fas fa-certificate "></i> Hot Search
+            </div>
+            <div class="row ">
+                <div class="col-md-4 content3-item ">
+                    <a href="./page/index1.html " class="content3-item_link ">
+                        <img src="images/aomua1.jpg " alt=" " class="content3-img ">
+                        <div class="content3-details ">
+                            <div class="content3-title ">Raincoat</div>
+                            <!-- <div class="content3-last-time ">2 days 1 night</div> -->
+                           <div class="content3-price ">Price: 1.436.000 VND</div>
+                            <div class="content3-destination ">Destination: Raincoat là áo mưa dạng áo khoác, thường được làm từ vật liệu chống thấm nước như vải PVC, nylon hoặc polyester được phủ lớp chống thấm.</div> 
+
+                            <!-- <div class="content3-destination ">Sightseeing accient town Tanah Lot  </div> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 content3-item ">
+                    <a href="# " class="content3-item_link ">
+                        <img src="images/aomua2.jpg " alt=" " class="content3-img ">
+                        <div class="content3-details ">
+                            <div class="content3-title ">Poncho  </div>
+                            <!-- <div class="content3-title ">- Tegalalang - Padi field </div> -->
+
+                            <!-- <div class="content3-last-time ">03 days 02 nights</div> -->
+                            <div class="content3-price ">Price: 2.460.000 VND</div>
+                            <div class="content3-destination ">Destination: Poncho là áo mưa dạng áo dù có hình dạng hình chữ nhật với một lỗ ở giữa để đặt qua đầu.</div>
+                            <!-- <div class="content3-destination ">Lempuyang temple - Kintamani - Padi field</div> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 content3-item ">
+                    <a href="# " class="content3-item_link ">
+                        <img src="images/aomua3.jpg " alt=" " class="content3-img ">
+                        <div class="content3-details ">
+                            <div class="content3-title "> Waterproof jacket </div>
+
+                            <!-- <div class="content3-last-time ">02 days/01 night</div> -->
+                            <div class="content3-price ">Price: 1.398.000 VND</div>
+                            <div class="content3-destination ">Destination: Waterproof jacket là áo khoác chống thấm nước được thiết kế để ngăn nước thấm vào bên trong.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 content3-item ">
+                    <a href="# " class="content3-item_link ">
+                        <img src="images/aomua4.jpg " alt=" " class="content3-img ">
+                        <div class="content3-details ">
+                            <div class="content3-title "> Rain poncho </div>
+                            <!-- <div class="content3-title "> Du thuyền Emeraude Hạ Long</div> -->
+                            <!-- <div class="content3-last-time ">02 days/01 night</div> -->
+                            <div class="content3-price ">Price: 4.100.000 VND</div>
+                            <div class="content3-destination ">Destination: Rain poncho là áo mưa dạng áo dù tương tự như poncho, thiết kế để cung cấp bảo vệ toàn diện khỏi mưa.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 content3-item ">
+                    <a href="# " class="content3-item_link ">
+                        <img src="images/aomua4.jpg " alt=" " class="content3-img ">
+                        <div class="content3-details ">
+                            <div class="content3-title "> Rain slicker:</div>
+                            <!-- <div class="content3-last-time ">03 days/02 nights</div> -->
+                            <div class="content3-price ">Price: 2.250.000 VND</div>
+                            <div class="content3-destination ">Destination: Rain slicker là áo mưa dạng áo khoác với lớp phủ chống nước để ngăn nước thấm vào bên trong.</div>
+                        </div>
+                    </a>
+                </div>
+               <div class="col-md-4 content3-item ">
+                    <a href="# " class="content3-item_link ">
+                        <img src="images/aomua4.jpg " alt=" " class="content3-img ">
+                        <div class="content3-details ">
+                            <div class="content3-title ">Rain cape</div>
+                            <!-- <div class="content3-last-time ">02 days/01 night</div> -->
+                           <div class="content3-price ">Price: 3.100.000 VND</div>
+                            <div class="content3-destination ">Destination: Rain cape là áo mưa dạng áo dù có nón và có dây kéo phía trước để dễ dàng mặc và tháo ra.</div> 
+                        </div>
+                    </a>
+                </div> 
+            </div>
+            <div class="col-sm-12 ">
+                <a href="# " class="see-more_link ">See more</a>
+            </div>
+        </div>
+
+        <!--Deals & Offers-->
+
+        <div class="container ">
+            <div class="text-left content-title ">
+                <i class="fas fa-certificate "></i> Deals & Offers
+            </div>
+            <div class="row ">
+                <div class="col-sm-4 ">
+                    <a href="# " class="content4_link ">
+                        <img src="images/deal1.jpg " class="content4-img ">
+                    </a>
+                </div>
+                <div class="col-sm-8 ">
+                    <a href="# " class="content4-title_link ">
+                        SWAN CRUISE: Free Shuttle Bus + $10 OFF Per Cabin Until June 2020
+                    </a>
+                    <div class="content4-details ">
+                        Book Swan Cruise with us and enjoy an extra 10$ discount per cabin for 2 day trip and $20 discount per cabin for 3 day trip, plus free shuttle bus and kayaking. Offer is valid until June 2020.
+                    </div>
+                    <div class="btn-offer-wrap ">
+                        <button class="btn-offer ">
+                            <a href="# " class="btn-offer_link ">View offer</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row " style="margin-top: 32px; ">
+                <div class="col-sm-4 ">
+                    <a href="# " class="content4_link ">
+                        <img src="images/deal2.jpg " class="content4-img ">
+                    </a>
+                </div>
+                <div class="col-sm-8 ">
+                    <a href="# " class="content4-title_link ">
+                        GLORY LEGEND CRUISE: Free Shuttle Bus + Kayaking For All Bookings Until June 2020
+                    </a>
+                    <div class="content4-details ">
+                        Enjoy special deal when booking Glory Cruise with us: Free shuttle bus and kayaking for all trips from now until end of December. Rate start from only $145/person for deluxe double room.
+                    </div>
+                    <div class="btn-offer-wrap ">
+                        <button class="btn-offer ">
+                            <a href="# " class="btn-offer_link ">View offer</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <div class="container-fluid app-footer wow fadeInUp ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-3 ">
+                    <div class="footer-title ">GENERAL</div>
+                    <ul class="footer-list ">
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">About Us</a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">Details</a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">Services</a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">Best Price Policy</a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 ">
+                    <div class="footer-title ">TRIP PLANNING</div>
+                    <ul class="footer-list ">
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">FAQs</a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">Weather</a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">Travel Updates</a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">Download Brochures</a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">Visa & Immigration</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 ">
+                    <div class="footer-title ">CONTACT INFORMATION</div>
+                    <ul class="footer-list ">
+                        <li class="footer-item ">
+                            <i class="fa fa-home "></i>Quận Ngũ Hành Sơn, Đà Nẵng
+                        </li>
+                        <li class="footer-item ">
+                            <i class="fa fa-phone "></i> 0123456789
+                        </li>
+                        <li class="footer-item ">
+                            <i class="fa fa-fax "></i> 0123456789
+                        </li>
+                        <li class="footer-item ">
+                            <i class="far fa-envelope "></i> Hoàng Lê Duy
+                        </li>
+                        <li class="footer-item ">
+                            <i class="far fa-registered "></i> VIETNAM-KOREA University
+                        </li>
+                        <li class="footer-item ">
+
+                        </li>
+                    </ul>
+                </div>  
+                <div class="col-sm-1 ">
+                    <ul class="footer-list social-list ">
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">
+                                <i class="footer-social-icon fab fa-facebook-square "></i>
+                            </a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">
+                                <i class="footer-social-icon fab fa-instagram-square "></i>
+                            </a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">
+                                <i class="footer-social-icon fab fa-twitter-square "></i>
+                            </a>
+                        </li>
+                        <li class="footer-item ">
+                            <a href="# " class="footer-item-link ">
+                                <i class="footer-social-icon fab fa-telegram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="js/wow.min.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js " integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+    <script>
+        $(document).ready(function() {
+          $('.carousel').carousel({
+            interval: 5000
+          });
+        });
+      </script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>

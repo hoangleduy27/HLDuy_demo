@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Thêm sản phẩm</title>
+    <link rel="stylesheet" type="text/css" href="./css/product.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Thêm sản phẩm</h2>
+        <form method="POST" action="process_product.php" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="product_name">Tên sản phẩm:</label>
+                <input type="text" name="product_name" id="product_name" required>
+            </div>
+            <div class="form-group">
+                <label for="product_description">Mô tả sản phẩm:</label>
+                <input type="text" name="product_description" id="product_description" required>
+            </div>
+            <div class="form-group">
+                <label for="product_image">Ảnh sản phẩm:</label>
+                <input type="file" name="product_image" id="product_image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="product_video">Video sản phẩm:</label>
+                <input type="file" name="product_video" id="product_video" accept="video/*" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Thêm sản phẩm">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+</html>
